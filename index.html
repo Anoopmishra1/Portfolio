@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <h2>AADHYA MISHRA,</h2>
+            </div>
+            <div class="elem">
+                <h3>full stack developer</h3>
+            </div>
+            <div class="elem">
+                see my work profile
+            </div>
+            <div class="elem">
+                <h2>AADHYA MISHRA,</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bg">
+        <nav>
+            <img src="./img/mooi.jpg " alt="">
+            <div id="link">
+                <a class="navitem" href="#">Home</a>
+                <a class="navitem" href="#">Contacts</a>
+                <i class="navitem fa-solid fa-magnifying-glass"></i>
+                <i id="menu" class="navitem fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div id="section">
+            <div id="left">
+                <div id="sline"></div>
+                <h4 class="leftitem">Hello, I'am 👋</h4>
+                <h2 class="leftitem">AADHYA MISHRA,</h2>
+                <h5 class="leftitem">a developer from <span id="col">india.</span> </h5>
+                <div class="leftitem" id="playbtn">
+                    <img src="./img/play.png" alt="">
+                    <h5>see my <span class="bold">work profile</span> </h5>
+                </div>
+                <div class="leftitem" id="contact">
+                    <h3>contect me</h3>
+                    <h6>Email : <span>anyone@gmail.com</span></h6>
+                    <h6>Contact Number: <span>+91-9923455865</span></h6>
+                </div>
+            </div>
+            <div id="right">
+                <img src="./img/photo5.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+
+
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#bg');
+
+        menu.addEventListener('click', function () {
+
+            bg.style.transform = 'scale(.8)';
+            bg.style.borderRadius = '10px';
+            bg.style.boxShodow = '0 150px 45px -100px rgba(0,0,0,0,.2)';
+        })
+    </script>
+</body>
+
+</html>
